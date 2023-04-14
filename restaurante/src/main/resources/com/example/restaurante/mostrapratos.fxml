@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="659.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurante.MotraControll">
+   <children>
+      <ListView fx:id="lista" layoutX="34.0" layoutY="70.0" prefHeight="206.0" prefWidth="633.0" />
+      <Button fx:id="btnLimpar" disable="true" layoutX="31.0" layoutY="305.0" mnemonicParsing="false" onAction="#clickLimpar" prefHeight="26.0" prefWidth="634.0" text="Limpar Seleção" />
+      <Label layoutX="308.0" layoutY="28.0" text="Lista de Pratos" />
+      <Button fx:id="btnBuscar" layoutX="34.0" layoutY="33.0" mnemonicParsing="false" onAction="#clickBuscar" text="Atualizar Lista" />
+      <Button fx:id="btnDeslogar" layoutX="601.0" layoutY="33.0" mnemonicParsing="false" onAction="#clickDeslogar" text="Deslogar" />
+      <Label fx:id="txtID" layoutX="34.0" layoutY="370.0" text="COD: " visible="false" />
+      <Label fx:id="txtNome" layoutX="34.0" layoutY="400.0" text="NOME PRATO:" visible="false" />
+      <Label fx:id="txtValor" layoutX="33.0" layoutY="431.0" text="R$" visible="false" />
+      <Label fx:id="txtCategoria" layoutX="32.0" layoutY="457.0" text="CATEGORIA: " visible="false" />
+      <Label fx:id="txtDescricao" layoutX="32.0" layoutY="491.0" text="DESCRIÇÃO" visible="false" />
+      <ImageView fx:id="imagemB" fitHeight="275.0" fitWidth="323.0" layoutX="347.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Dropbox/PC/Desktop/brasileira.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

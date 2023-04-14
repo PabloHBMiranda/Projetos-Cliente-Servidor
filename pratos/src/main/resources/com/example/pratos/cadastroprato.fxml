@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pratos.PratoController">
+   <children>
+      <TextField fx:id="txtNome" layoutX="115.0" layoutY="105.0" prefHeight="26.0" prefWidth="265.0" />
+      <TextField fx:id="txtDescri" layoutX="114.0" layoutY="157.0" prefHeight="26.0" prefWidth="266.0" />
+      <TextField fx:id="txtValor" layoutX="444.0" layoutY="104.0" prefHeight="26.0" prefWidth="114.0" />
+      <Label layoutX="24.0" layoutY="110.0" text="Nome do Prato:" />
+      <Label layoutX="409.0" layoutY="110.0" text="Valor:" />
+      <Label layoutX="24.0" layoutY="161.0" text="Descrição:" />
+      <ComboBox fx:id="cmbCateg" layoutX="409.0" layoutY="157.0" prefWidth="150.0" promptText="&lt;Selecione&gt; ">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></ComboBox>
+      <Button fx:id="btnRg" layoutX="252.0" layoutY="226.0" mnemonicParsing="false" onAction="#clickRg" text="Registrar Prato" />
+   </children>
+</AnchorPane>
